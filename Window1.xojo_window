@@ -38,11 +38,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   781
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
@@ -59,343 +59,6 @@ Begin Window Window1
       Visible         =   True
       Width           =   142
    End
-   Begin Label label_name
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   1
-      Height          =   20
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   65
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   1
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   "Name"
-      TextAlignment   =   2
-      TextColor       =   &c00000000
-      Tooltip         =   "Name of the subscription service"
-      Top             =   124
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   47
-   End
-   Begin Label label_type
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   1
-      Height          =   20
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   130
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   2
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   "Type"
-      TextAlignment   =   2
-      TextColor       =   &c00000000
-      Tooltip         =   "Type of subscription service"
-      Top             =   124
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   37
-   End
-   Begin Label label_platform
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   1
-      Height          =   20
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   185
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   3
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   "Platform(s)"
-      TextAlignment   =   2
-      TextColor       =   &c00000000
-      Tooltip         =   "What platforms the subscription service works on"
-      Top             =   124
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   86
-   End
-   Begin Label label_paymentGateway
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   1
-      Height          =   20
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   289
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   4
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   "Payment Gateway"
-      TextAlignment   =   2
-      TextColor       =   &c00000000
-      Tooltip         =   "Where payments are made for the subscription service"
-      Top             =   124
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   134
-   End
-   Begin Label label_cost
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   1
-      Height          =   20
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   440
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   5
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   "Cost"
-      TextAlignment   =   2
-      TextColor       =   &c00000000
-      Tooltip         =   "Price of the subscription service"
-      Top             =   124
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   35
-   End
-   Begin Label label_billingCycle
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   1
-      Height          =   20
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   492
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   6
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   "Billing Cycle"
-      TextAlignment   =   2
-      TextColor       =   &c00000000
-      Tooltip         =   "Frequency of billing for subscription service"
-      Top             =   124
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   94
-   End
-   Begin Label label_purchaseDate
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   1
-      Height          =   20
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   603
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   7
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   "Purchase Date"
-      TextAlignment   =   2
-      TextColor       =   &c00000000
-      Tooltip         =   "Purchase date of the subscription service"
-      Top             =   124
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   109
-   End
-   Begin Label label_autoRenew
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   1
-      Height          =   20
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   729
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   8
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   "Auto Renew"
-      TextAlignment   =   2
-      TextColor       =   &c00000000
-      Tooltip         =   "Does the subscription service auto renew?"
-      Top             =   124
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   97
-   End
-   Begin Label label_expires
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   1
-      Height          =   20
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   843
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Multiline       =   False
-      Scope           =   0
-      Selectable      =   False
-      TabIndex        =   25
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Text            =   "Expires"
-      TextAlignment   =   2
-      TextColor       =   &c00000000
-      Tooltip         =   "When does the subscription service expire?"
-      Top             =   124
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   91
-   End
-   Begin Separator separator_top
-      AllowAutoDeactivate=   True
-      Enabled         =   True
-      Height          =   4
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Left            =   65
-      LockBottom      =   False
-      LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Scope           =   0
-      TabIndex        =   26
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Tooltip         =   ""
-      Top             =   149
-      Transparent     =   False
-      Visible         =   True
-      Width           =   858
-   End
    Begin Separator separator_bottom
       AllowAutoDeactivate=   True
       Enabled         =   True
@@ -403,11 +66,11 @@ Begin Window Window1
       Index           =   -2147483648
       InitialParent   =   ""
       Left            =   65
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       Scope           =   0
       TabIndex        =   27
       TabPanelIndex   =   0
@@ -423,7 +86,7 @@ Begin Window Window1
       AllowFocus      =   False
       AllowFocusRing  =   True
       AllowTabs       =   False
-      Backdrop        =   1617321983
+      Backdrop        =   1265803263
       DoubleBuffer    =   False
       Enabled         =   True
       Height          =   87
@@ -431,7 +94,7 @@ Begin Window Window1
       InitialParent   =   ""
       Left            =   349
       LockBottom      =   False
-      LockedInPosition=   True
+      LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
@@ -445,7 +108,7 @@ Begin Window Window1
       Visible         =   True
       Width           =   302
    End
-   Begin Listbox Listbox1
+   Begin Listbox listBox_subs
       AllowAutoDeactivate=   True
       AllowAutoHideScrollbars=   True
       AllowExpandableRows=   False
@@ -454,11 +117,11 @@ Begin Window Window1
       AllowRowDragging=   False
       AllowRowReordering=   False
       Bold            =   False
-      ColumnCount     =   1
-      ColumnWidths    =   ""
+      ColumnCount     =   9
+      ColumnWidths    =   "*,*,*,14%,*,*,*,*,*"
       DataField       =   ""
       DataSource      =   ""
-      DefaultRowHeight=   -1
+      DefaultRowHeight=   40
       DropIndicatorVisible=   False
       Enabled         =   True
       FontName        =   "System"
@@ -467,20 +130,20 @@ Begin Window Window1
       GridLinesHorizontalStyle=   0
       GridLinesVerticalStyle=   0
       HasBorder       =   True
-      HasHeader       =   False
+      HasHeader       =   True
       HasHorizontalScrollbar=   False
       HasVerticalScrollbar=   True
       HeadingIndex    =   -1
       Height          =   308
       Index           =   -2147483648
       InitialParent   =   ""
-      InitialValue    =   ""
+      InitialValue    =   "Name	Type	Platform	Payment Gateway	Cost	Billing Cycle	Purchase Date	Auto Renews	Expires"
       Italic          =   False
       Left            =   65
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   False
+      LockRight       =   True
       LockTop         =   True
       RequiresSelection=   False
       RowSelectionType=   0
@@ -494,6 +157,7 @@ Begin Window Window1
       Underline       =   False
       Visible         =   True
       Width           =   869
+      _ScrollOffset   =   0
       _ScrollWidth    =   -1
    End
    Begin PushButton button_addSub
@@ -511,11 +175,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   587
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   30
@@ -543,11 +207,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   679
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   31
@@ -575,11 +239,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   795
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   32
@@ -596,6 +260,45 @@ End
 #tag EndWindow
 
 #tag WindowCode
+	#tag Event
+		Sub Open()
+		  Var subs(1,10) As String
+		  
+		  subs(0,0) = "HBO Max"
+		  subs(0,1) = "Streaming"
+		  subs(0,2) = "Roku, Browser"
+		  subs(0,3) = "Apple"
+		  subs(0,4) = "$14.99"
+		  subs(0,5) = "Monthly"
+		  subs(0,6) = "07/08/2022"
+		  subs(0,7) = "08/08/2022"
+		  subs(0,8) = "No"
+		  
+		  subs(1,0) = "Amazon Prime"
+		  subs(1,1) = "Shopping"
+		  subs(1,2) = "Browser"
+		  subs(1,3) = "PayPal"
+		  subs(1,4) = "$14.99"
+		  subs(1,5) = "Monthly"
+		  subs(1,6) = "07/21/2022"
+		  subs(1,7) = "08/21/2022"
+		  subs(1,8) = "No"
+		  
+		  listBox_subs.AddRow()
+		  listBox_subs.AddRow()
+		  
+		  Var row As Integer
+		  Var column As Integer
+		  
+		  For row = 0 To 1
+		    For column = 0 To 10
+		      listBox_subs.CellValueAt(row, column) = subs(row, column)
+		    Next
+		  Next
+		End Sub
+	#tag EndEvent
+
+
 #tag EndWindowCode
 
 #tag ViewBehavior

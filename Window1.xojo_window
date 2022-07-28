@@ -38,11 +38,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   781
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
@@ -66,11 +66,11 @@ Begin Window Window1
       Index           =   -2147483648
       InitialParent   =   ""
       Left            =   65
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   True
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       Scope           =   0
       TabIndex        =   27
       TabPanelIndex   =   0
@@ -86,7 +86,7 @@ Begin Window Window1
       AllowFocus      =   False
       AllowFocusRing  =   True
       AllowTabs       =   False
-      Backdrop        =   1617321983
+      Backdrop        =   1265803263
       DoubleBuffer    =   False
       Enabled         =   True
       Height          =   87
@@ -94,7 +94,7 @@ Begin Window Window1
       InitialParent   =   ""
       Left            =   349
       LockBottom      =   False
-      LockedInPosition=   True
+      LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
@@ -121,7 +121,7 @@ Begin Window Window1
       ColumnWidths    =   "*,*,*,14%,*,*,*,*,*"
       DataField       =   ""
       DataSource      =   ""
-      DefaultRowHeight=   -1
+      DefaultRowHeight=   40
       DropIndicatorVisible=   False
       Enabled         =   True
       FontName        =   "System"
@@ -140,10 +140,10 @@ Begin Window Window1
       InitialValue    =   "Name	Type	Platform	Payment Gateway	Cost	Billing Cycle	Purchase Date	Auto Renews	Expires"
       Italic          =   False
       Left            =   65
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   True
-      LockRight       =   False
+      LockRight       =   True
       LockTop         =   True
       RequiresSelection=   False
       RowSelectionType=   0
@@ -175,11 +175,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   587
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   30
@@ -207,11 +207,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   679
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   31
@@ -239,11 +239,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   795
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
       MacButtonStyle  =   0
       Scope           =   0
       TabIndex        =   32
@@ -260,6 +260,45 @@ End
 #tag EndWindow
 
 #tag WindowCode
+	#tag Event
+		Sub Open()
+		  Var subs(1,10) As String
+		  
+		  subs(0,0) = "HBO Max"
+		  subs(0,1) = "Streaming"
+		  subs(0,2) = "Roku, Browser"
+		  subs(0,3) = "Apple"
+		  subs(0,4) = "$14.99"
+		  subs(0,5) = "Monthly"
+		  subs(0,6) = "07/08/2022"
+		  subs(0,7) = "08/08/2022"
+		  subs(0,8) = "No"
+		  
+		  subs(1,0) = "Amazon Prime"
+		  subs(1,1) = "Shopping"
+		  subs(1,2) = "Browser"
+		  subs(1,3) = "PayPal"
+		  subs(1,4) = "$14.99"
+		  subs(1,5) = "Monthly"
+		  subs(1,6) = "07/21/2022"
+		  subs(1,7) = "08/21/2022"
+		  subs(1,8) = "No"
+		  
+		  listBox_subs.AddRow()
+		  listBox_subs.AddRow()
+		  
+		  Var row As Integer
+		  Var column As Integer
+		  
+		  For row = 0 To 1
+		    For column = 0 To 10
+		      listBox_subs.CellValueAt(row, column) = subs(row, column)
+		    Next
+		  Next
+		End Sub
+	#tag EndEvent
+
+
 #tag EndWindowCode
 
 #tag ViewBehavior

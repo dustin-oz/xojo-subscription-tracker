@@ -1,5 +1,5 @@
 #tag Window
-Begin Window Window1
+Begin Window windowMain
    Backdrop        =   0
    BackgroundColor =   &cFFFFFF00
    Composite       =   False
@@ -301,6 +301,13 @@ End
 
 #tag EndWindowCode
 
+#tag Events button_addSub
+	#tag Event
+		Sub Action()
+		  windowAddSub.Show
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty
 		Name="Name"

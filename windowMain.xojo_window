@@ -24,7 +24,7 @@ Begin Window windowMain
    Type            =   0
    Visible         =   True
    Width           =   1000
-   Begin Label Label1
+   Begin Label label_version
       AllowAutoDeactivate=   True
       Bold            =   False
       DataField       =   ""
@@ -153,7 +153,7 @@ Begin Window windowMain
       TabStop         =   True
       Tooltip         =   ""
       Top             =   165
-      Transparent     =   False
+      Transparent     =   True
       Underline       =   False
       Visible         =   True
       Width           =   869
@@ -249,7 +249,7 @@ Begin Window windowMain
       Transparent     =   False
       Visible         =   True
       Width           =   153
-      Begin Label Label2
+      Begin Label label_close
          AllowAutoDeactivate=   True
          Bold            =   False
          DataField       =   ""
@@ -331,9 +331,29 @@ End
 
 
 	#tag Method, Flags = &h0
+		Sub CloseApp()
+		  Self.Close
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Sub createSubRow()
 		  listBox_subs.AddRow()
 		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub NewWindowAddSub()
+		  Var w As New windowAddSub
+		  w.callBack = self
+		  w.ShowModal
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub RemoveSub()
+		  listBox_subs.RemoveRowAt(listBox_subs.ListIndex)
 		End Sub
 	#tag EndMethod
 
@@ -343,23 +363,21 @@ End
 #tag Events button_addSub
 	#tag Event
 		Sub Action()
-		  Var w As New windowAddSub
-		  w.callBack = self
-		  w.ShowModal
+		  NewWindowAddSub()
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events button_removeSub
 	#tag Event
 		Sub Action()
-		  listBox_subs.RemoveRowAt(listBox_subs.ListIndex)
+		  RemoveSub()
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events Label2
+#tag Events label_close
 	#tag Event
 		Function MouseDown(X As Integer, Y As Integer) As Boolean
-		  self.Close
+		  CloseApp()
 		End Function
 	#tag EndEvent
 #tag EndEvents

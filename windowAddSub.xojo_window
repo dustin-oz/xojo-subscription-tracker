@@ -53,7 +53,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   60
+      Top             =   31
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -95,7 +95,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   60
+      Top             =   31
       Transparent     =   False
       Underline       =   False
       ValidationMask  =   ""
@@ -116,7 +116,7 @@ Begin Window windowAddSub
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
-      Left            =   149
+      Left            =   191
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -128,7 +128,7 @@ Begin Window windowAddSub
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   392
+      Top             =   418
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -148,7 +148,7 @@ Begin Window windowAddSub
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
-      Left            =   31
+      Left            =   73
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -160,7 +160,7 @@ Begin Window windowAddSub
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   392
+      Top             =   418
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -195,7 +195,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   101
+      Top             =   73
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -227,7 +227,7 @@ Begin Window windowAddSub
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   101
+      Top             =   73
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -262,7 +262,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   139
+      Top             =   113
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -294,7 +294,7 @@ Begin Window windowAddSub
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   139
+      Top             =   113
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -329,7 +329,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   171
+      Top             =   153
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -361,7 +361,7 @@ Begin Window windowAddSub
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   171
+      Top             =   153
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -396,7 +396,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   203
+      Top             =   195
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -434,11 +434,11 @@ Begin Window windowAddSub
       TabIndex        =   28
       TabPanelIndex   =   0
       TabStop         =   True
-      Text            =   ""
+      Text            =   "$"
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   201
+      Top             =   193
       Transparent     =   False
       Underline       =   False
       ValidationMask  =   ""
@@ -474,7 +474,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   237
+      Top             =   235
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -506,7 +506,7 @@ Begin Window windowAddSub
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   239
+      Top             =   235
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -541,7 +541,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   271
+      Top             =   277
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -576,7 +576,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   305
+      Top             =   319
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -611,7 +611,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   337
+      Top             =   359
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -653,7 +653,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   337
+      Top             =   359
       Transparent     =   False
       Underline       =   False
       ValidationMask  =   ""
@@ -696,7 +696,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   303
+      Top             =   317
       Transparent     =   False
       Underline       =   False
       ValidationMask  =   ""
@@ -739,7 +739,7 @@ Begin Window windowAddSub
       TextAlignment   =   0
       TextColor       =   &c00000000
       Tooltip         =   ""
-      Top             =   269
+      Top             =   275
       Transparent     =   False
       Underline       =   False
       ValidationMask  =   ""

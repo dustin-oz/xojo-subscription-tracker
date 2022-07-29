@@ -11,7 +11,7 @@ Begin Window windowMain
    HasMaximizeButton=   True
    HasMinimizeButton=   True
    Height          =   624
-   ImplicitInstance=   True
+   ImplicitInstance=   False
    MacProcID       =   0
    MaximumHeight   =   32000
    MaximumWidth    =   32000
@@ -299,12 +299,22 @@ End
 	#tag EndEvent
 
 
+	#tag Method, Flags = &h0
+		Sub createSubRow()
+		  listBox_subs.AddRow()
+		  
+		End Sub
+	#tag EndMethod
+
+
 #tag EndWindowCode
 
 #tag Events button_addSub
 	#tag Event
 		Sub Action()
-		  windowAddSub.Show
+		  var w as new windowAddSub
+		  w.callBack = self
+		  w.ShowModal
 		End Sub
 	#tag EndEvent
 #tag EndEvents

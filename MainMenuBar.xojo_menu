@@ -104,6 +104,14 @@ Begin Menu MainMenuBar
          AutoEnable = True
          Visible = True
       End
+      Begin MenuItem EditAddNewSubscription
+         SpecialMenu = 0
+         Index = -2147483648
+         Text = "Add New Subscription"
+         AutoEnabled = True
+         AutoEnable = True
+         Visible = True
+      End
    End
 End
 #tag EndMenu

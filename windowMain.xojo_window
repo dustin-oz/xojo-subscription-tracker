@@ -330,6 +330,26 @@ End
 	#tag EndEvent
 
 
+	#tag MenuHandler
+		Function AddNewSub() As Boolean Handles AddNewSub.Action
+			MsgBox("Add New Subscription!")
+			Return True
+			
+		End Function
+	#tag EndMenuHandler
+
+	#tag MenuHandler
+		Function EditAddNewSubscription() As Boolean Handles EditAddNewSubscription.Action
+			Var w As New windowAddSub
+			w.callBack = Self
+			w.ShowModal
+			
+			Return True
+			
+		End Function
+	#tag EndMenuHandler
+
+
 	#tag Method, Flags = &h0
 		Sub CloseApp()
 		  Self.Close

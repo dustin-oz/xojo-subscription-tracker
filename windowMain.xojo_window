@@ -86,7 +86,7 @@ Begin Window windowMain
       AllowFocus      =   False
       AllowFocusRing  =   True
       AllowTabs       =   False
-      Backdrop        =   1265803263
+      Backdrop        =   1617321983
       DoubleBuffer    =   False
       Enabled         =   True
       Height          =   87
@@ -103,7 +103,7 @@ Begin Window windowMain
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   13
+      Top             =   39
       Transparent     =   True
       Visible         =   True
       Width           =   302
@@ -174,7 +174,7 @@ Begin Window windowMain
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
-      Left            =   587
+      Left            =   81
       LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   False
@@ -206,7 +206,7 @@ Begin Window windowMain
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
-      Left            =   679
+      Left            =   173
       LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   False
@@ -224,37 +224,66 @@ Begin Window windowMain
       Visible         =   True
       Width           =   104
    End
-   Begin PushButton button_removeAllSubs
+   Begin RoundRectangle RoundRectangle1
       AllowAutoDeactivate=   True
-      Bold            =   False
-      Cancel          =   False
-      Caption         =   "Remove All Subs"
-      Default         =   False
+      BorderColor     =   &c000000FF
+      BorderThickness =   0.0
+      CornerHeight    =   10.0
+      CornerWidth     =   10.0
       Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   0.0
-      FontUnit        =   0
+      FillColor       =   &cC5190700
       Height          =   20
       Index           =   -2147483648
       InitialParent   =   ""
-      Italic          =   False
-      Left            =   795
-      LockBottom      =   True
+      Left            =   770
+      LockBottom      =   False
       LockedInPosition=   False
-      LockLeft        =   False
-      LockRight       =   True
-      LockTop         =   False
-      MacButtonStyle  =   0
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
       Scope           =   0
-      TabIndex        =   32
+      TabIndex        =   33
       TabPanelIndex   =   0
-      TabStop         =   True
-      Tooltip         =   "Delete ALL subscription entries"
+      Tooltip         =   ""
       Top             =   485
       Transparent     =   False
-      Underline       =   False
       Visible         =   True
-      Width           =   128
+      Width           =   153
+      Begin Label Label2
+         AllowAutoDeactivate=   True
+         Bold            =   False
+         DataField       =   ""
+         DataSource      =   ""
+         Enabled         =   True
+         FontName        =   "System"
+         FontSize        =   16.0
+         FontUnit        =   0
+         Height          =   20
+         Index           =   -2147483648
+         InitialParent   =   "RoundRectangle1"
+         Italic          =   False
+         Left            =   770
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         Multiline       =   False
+         Scope           =   0
+         Selectable      =   False
+         TabIndex        =   0
+         TabPanelIndex   =   0
+         TabStop         =   True
+         Text            =   "Close"
+         TextAlignment   =   2
+         TextColor       =   &c00000000
+         Tooltip         =   ""
+         Top             =   485
+         Transparent     =   False
+         Underline       =   False
+         Visible         =   True
+         Width           =   153
+      End
    End
 End
 #tag EndWindow
@@ -295,6 +324,8 @@ End
 		      listBox_subs.CellValueAt(row, column) = subs(row, column)
 		    Next
 		  Next
+		  
+		  
 		End Sub
 	#tag EndEvent
 
@@ -312,7 +343,7 @@ End
 #tag Events button_addSub
 	#tag Event
 		Sub Action()
-		  var w as new windowAddSub
+		  Var w As New windowAddSub
 		  w.callBack = self
 		  w.ShowModal
 		End Sub
@@ -323,6 +354,13 @@ End
 		Sub Action()
 		  listBox_subs.RemoveRowAt(listBox_subs.ListIndex)
 		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Label2
+	#tag Event
+		Function MouseDown(X As Integer, Y As Integer) As Boolean
+		  self.Close
+		End Function
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior

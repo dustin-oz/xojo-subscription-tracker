@@ -88,7 +88,7 @@ Begin Window windowAddSub
       Password        =   False
       ReadOnly        =   False
       Scope           =   0
-      TabIndex        =   9
+      TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   ""
@@ -102,38 +102,6 @@ Begin Window windowAddSub
       Visible         =   True
       Width           =   212
    End
-   Begin PushButton btn_add
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      Cancel          =   False
-      Caption         =   "Add Sub"
-      Default         =   True
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   14.0
-      FontUnit        =   2
-      Height          =   27
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   191
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      MacButtonStyle  =   0
-      Scope           =   0
-      TabIndex        =   18
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Tooltip         =   ""
-      Top             =   418
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   115
-   End
    Begin PushButton btn_cancel
       AllowAutoDeactivate=   True
       Bold            =   False
@@ -142,29 +110,29 @@ Begin Window windowAddSub
       Default         =   False
       Enabled         =   True
       FontName        =   "System"
-      FontSize        =   14.0
+      FontSize        =   16.0
       FontUnit        =   2
-      Height          =   27
+      Height          =   38
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   False
-      Left            =   73
+      Left            =   35
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   0
+      MacButtonStyle  =   7
       Scope           =   0
-      TabIndex        =   20
+      TabIndex        =   19
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   418
+      Top             =   407
       Transparent     =   False
       Underline       =   False
       Visible         =   True
-      Width           =   116
+      Width           =   140
    End
    Begin Label label_type
       AllowAutoDeactivate=   True
@@ -188,7 +156,7 @@ Begin Window windowAddSub
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   21
+      TabIndex        =   3
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Type:"
@@ -223,7 +191,7 @@ Begin Window windowAddSub
       LockTop         =   True
       Scope           =   0
       SelectedRowIndex=   0
-      TabIndex        =   22
+      TabIndex        =   2
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
@@ -255,7 +223,7 @@ Begin Window windowAddSub
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   23
+      TabIndex        =   4
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Platform:"
@@ -290,7 +258,7 @@ Begin Window windowAddSub
       LockTop         =   True
       Scope           =   0
       SelectedRowIndex=   0
-      TabIndex        =   24
+      TabIndex        =   5
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
@@ -322,7 +290,7 @@ Begin Window windowAddSub
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   25
+      TabIndex        =   6
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Payment Gateway:"
@@ -357,11 +325,11 @@ Begin Window windowAddSub
       LockTop         =   True
       Scope           =   0
       SelectedRowIndex=   0
-      TabIndex        =   26
+      TabIndex        =   7
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   153
+      Top             =   155
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -389,7 +357,7 @@ Begin Window windowAddSub
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   27
+      TabIndex        =   8
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Cost:"
@@ -431,7 +399,7 @@ Begin Window windowAddSub
       Password        =   False
       ReadOnly        =   False
       Scope           =   0
-      TabIndex        =   28
+      TabIndex        =   9
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "$"
@@ -467,7 +435,7 @@ Begin Window windowAddSub
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   29
+      TabIndex        =   10
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Billing Cycle:"
@@ -502,7 +470,7 @@ Begin Window windowAddSub
       LockTop         =   True
       Scope           =   0
       SelectedRowIndex=   0
-      TabIndex        =   30
+      TabIndex        =   11
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
@@ -534,7 +502,7 @@ Begin Window windowAddSub
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   31
+      TabIndex        =   12
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Purchase Date:"
@@ -569,7 +537,7 @@ Begin Window windowAddSub
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   33
+      TabIndex        =   14
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Auto Renews:"
@@ -604,7 +572,7 @@ Begin Window windowAddSub
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
-      TabIndex        =   35
+      TabIndex        =   16
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   "Expires:"
@@ -646,7 +614,7 @@ Begin Window windowAddSub
       Password        =   False
       ReadOnly        =   False
       Scope           =   0
-      TabIndex        =   36
+      TabIndex        =   17
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   ""
@@ -689,7 +657,7 @@ Begin Window windowAddSub
       Password        =   False
       ReadOnly        =   False
       Scope           =   0
-      TabIndex        =   37
+      TabIndex        =   15
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   ""
@@ -732,7 +700,7 @@ Begin Window windowAddSub
       Password        =   False
       ReadOnly        =   False
       Scope           =   0
-      TabIndex        =   38
+      TabIndex        =   13
       TabPanelIndex   =   0
       TabStop         =   True
       Text            =   ""
@@ -745,6 +713,38 @@ Begin Window windowAddSub
       ValidationMask  =   ""
       Visible         =   True
       Width           =   212
+   End
+   Begin PushButton btn_add
+      AllowAutoDeactivate=   True
+      Bold            =   False
+      Cancel          =   False
+      Caption         =   "Add Sub"
+      Default         =   True
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   16.0
+      FontUnit        =   2
+      Height          =   38
+      Index           =   -2147483648
+      InitialParent   =   ""
+      Italic          =   False
+      Left            =   198
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      MacButtonStyle  =   7
+      Scope           =   0
+      TabIndex        =   18
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   407
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   140
    End
 End
 #tag EndWindow
@@ -764,6 +764,13 @@ End
 
 #tag EndWindowCode
 
+#tag Events btn_cancel
+	#tag Event
+		Sub Action()
+		  self.Close
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag Events btn_add
 	#tag Event
 		Sub Action()
@@ -773,13 +780,6 @@ End
 		    callBack.listBox_subs.AddRow(input_name.Text.Trim, input_type.Text.Trim, input_platform.Text.Trim, input_paymentGateway.Text.Trim,  input_cost.Text.Trim,  input_billingCycle.Text.Trim,  input_purchaseDate.Text.Trim,  input_autoRenews.Text.Trim,  input_expires.Text.Trim)
 		    self.Close
 		  end if
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events btn_cancel
-	#tag Event
-		Sub Action()
-		  self.Close
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -324,8 +324,6 @@ End
 		      listBox_subs.CellValueAt(row, column) = subs(row, column)
 		    Next
 		  Next
-		  
-		  
 		End Sub
 	#tag EndEvent
 

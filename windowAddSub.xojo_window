@@ -111,7 +111,7 @@ Begin Window windowAddSub
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   14.0
-      FontUnit        =   1
+      FontUnit        =   2
       Height          =   27
       Index           =   -2147483648
       InitialParent   =   ""
@@ -143,7 +143,7 @@ Begin Window windowAddSub
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   14.0
-      FontUnit        =   1
+      FontUnit        =   2
       Height          =   27
       Index           =   -2147483648
       InitialParent   =   ""

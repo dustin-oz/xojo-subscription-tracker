@@ -324,6 +324,8 @@ End
 		      listBox_subs.CellValueAt(row, column) = subs(row, column)
 		    Next
 		  Next
+		  listBox_subs.ColumnTypeAt(0) = ListBox.CellTypes.TextArea
+		  
 		End Sub
 	#tag EndEvent
 
@@ -358,6 +360,18 @@ End
 
 #tag EndWindowCode
 
+#tag Events listBox_subs
+	#tag Event
+		Function CellKeyDown(row as Integer, column as Integer, key as String) As Boolean
+		  If key = Chr(9) And Not Keyboard.ShiftKey Then
+		    If column < 8 Then Me.EditCellAt(row, column + 1)
+		    
+		  Elseif key = Chr(9) And Keyboard.ShiftKey Then
+		    If column > 0 Then  Me.EditCellAt(row, column -1)
+		  End If
+		End Function
+	#tag EndEvent
+#tag EndEvents
 #tag Events button_addSub
 	#tag Event
 		Sub Action()

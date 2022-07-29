@@ -32,7 +32,7 @@ Begin Window windowMain
       Enabled         =   True
       FontName        =   "system"
       FontSize        =   11.0
-      FontUnit        =   1
+      FontUnit        =   2
       Height          =   18
       Index           =   -2147483648
       InitialParent   =   ""
@@ -315,6 +315,13 @@ End
 		  var w as new windowAddSub
 		  w.callBack = self
 		  w.ShowModal
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events button_removeSub
+	#tag Event
+		Sub Action()
+		  listBox_subs.RemoveRowAt(listBox_subs.ListIndex)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
